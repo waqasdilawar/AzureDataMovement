@@ -62,7 +62,7 @@ namespace DataMovementSamples
         /// <summary>
         /// Container name used in this sample.
         /// </summary>
-        private const string ContainerName = "samplecontainer";
+        private const string ContainerName = "MyContainer";
 
         /// <summary>
         /// Share name used in this sample.
@@ -130,8 +130,8 @@ namespace DataMovementSamples
         /// </summary>
         private static async Task BlobCopySample()
         {
-            string sourceBlobName = "azure_blockblob.png";
-            string destinationBlobName = "azure_blockblob2.png";
+            string sourceBlobName = "application-user-photos/azure_blockblob.png";
+            string destinationBlobName = "application-user-photos/azure_blockblob-2.png";
 
             // Create the source CloudBlob instance
             CloudBlob sourceBlob = await Util.GetCloudBlobAsync(ContainerName, sourceBlobName, BlobType.BlockBlob);
